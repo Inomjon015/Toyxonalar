@@ -1,10 +1,10 @@
 import React from 'react'
+import People from './Components/People.jsx'
 
 export default function App() {
   return (
     <div>
-      <h1 className='bg-red-500'>salom</h1>
-      <h2>Abdusharif</h2>
+<People/>
      
     </div>
   )
