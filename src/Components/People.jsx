@@ -24,7 +24,7 @@ export default function People() {
 
                     <Swiper
                         slidesPerView={1.5}
-                        spaceBetween={50}
+                        spaceBetween={30}
                         autoplay={{
                             delay: 2500,
                             disableOnInteraction: false,
