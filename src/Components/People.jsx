@@ -2,12 +2,14 @@ import React from 'react'
 import card1 from '../assets/Rectangle1.png'
 import card2 from '../assets/Rectangle2.png'
 import stars from "../assets/Frame.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
+AOS.init();
 
 
 // import required modules
@@ -19,7 +21,9 @@ export default function People() {
                 <div className='bg-[#F7FBFF] pb-[127px]'>
                     <div className=' flex flex-col justify-center items-center text-cennter '>
                         <button className='bg-[#1572D31A] font-[500] text-[14px] text-[#1572D3] py-[16px] px-[32px] rounded-[8px] mb-[24px] mt-[127px]'>TESTIMONIALS</button>
-                        <h1 className='font-[500] text-[38px] mb-[80px]'>What peole say about us?</h1>
+                        <div data-aos="zoom-in">
+                            <h1 className='font-[500] text-[38px] mb-[80px]'>What peole say about us?</h1>
+                            </div> 
                     </div>
 
                     <Swiper
